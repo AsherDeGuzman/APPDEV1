@@ -1,0 +1,19 @@
+.warranty {
+  background: #f9f6f2;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.warranty h2 {
+  color: #7f8c8d;
+}
+.warranty ul {
+  margin-top: 1rem;
+}
+.warranty li {
+  margin-bottom: 0.5rem;
+}
+.warranty a {
+  color: #2980b9;
+  text-decoration: underline;
+}

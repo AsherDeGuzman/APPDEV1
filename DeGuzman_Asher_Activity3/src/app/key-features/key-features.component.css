@@ -1,0 +1,15 @@
+.features {
+  background: #f6f2e7;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.features h2 {
+  color: #d35400;
+}
+.features ul {
+  margin-top: 1rem;
+}
+.features li {
+  margin-bottom: 0.5rem;
+}

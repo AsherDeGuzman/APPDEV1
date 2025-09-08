@@ -1,0 +1,18 @@
+.maintenance {
+  background: #f2f6e9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.maintenance h2 {
+  color: #16a085;
+}
+.maintenance h3 {
+  margin-top: 1rem;
+}
+.maintenance ul {
+  margin-top: 0.5rem;
+}
+.maintenance li {
+  margin-bottom: 0.5rem;
+}

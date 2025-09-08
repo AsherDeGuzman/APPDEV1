@@ -1,0 +1,15 @@
+.in-the-box {
+  background: #eaf6fb;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.in-the-box h2 {
+  color: #2980b9;
+}
+.in-the-box ul {
+  margin-top: 1rem;
+}
+.in-the-box li {
+  margin-bottom: 0.5rem;
+}

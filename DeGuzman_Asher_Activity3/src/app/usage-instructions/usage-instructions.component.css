@@ -1,0 +1,18 @@
+.usage {
+  background: #f7f0f6;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.usage h2 {
+  color: #8e44ad;
+}
+.usage h3 {
+  margin-top: 1rem;
+}
+.usage ul {
+  margin-top: 0.5rem;
+}
+.usage li {
+  margin-bottom: 0.5rem;
+}

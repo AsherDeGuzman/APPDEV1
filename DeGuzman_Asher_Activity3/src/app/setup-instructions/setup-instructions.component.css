@@ -1,0 +1,18 @@
+.setup {
+  background: #f0f7ec;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.setup h2 {
+  color: #27ae60;
+}
+.setup h3 {
+  margin-top: 1rem;
+}
+.setup ul {
+  margin-top: 0.5rem;
+}
+.setup li {
+  margin-bottom: 0.5rem;
+}

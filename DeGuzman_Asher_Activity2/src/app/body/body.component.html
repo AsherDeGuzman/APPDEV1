@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="main-info">
+        <h2>Main Info</h2>
+        <hr>
+        <img class="me" src="https://scontent.fmnl15-1.fna.fbcdn.net/v/t39.30808-6/474950169_1792146208254293_3021844024338117546_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeG2D6_5hiK-B8-7hKVGhgFYhJDk3z2TKyiEkOTfPZMrKDzvOM_WZFyLUP1XRX4n87wdFQSWYVjgxtnqVNSvLErZ&_nc_ohc=oXz8EmVUWAoQ7kNvwE_tKcI&_nc_oc=AdkoOXEwHGVvKYYvzTfKVw3F8ja4uZPZTVlavR3GLgTaeOuxuU1m7mT69dsIQaXlO6s&_nc_zt=23&_nc_ht=scontent.fmnl15-1.fna&_nc_gid=32ebuzK4MyEC8beAWUVBBQ&oh=00_AfZpse07fVxRgBmRkg3SUwx2KI_YcGvxAlelo_ENWygBEA&oe=68C40E38" alt="Profile picture of {{name}}">
+        <p class="name"><strong>Name:</strong> {{name}}</p>
+        <p class="address"><strong>Address:</strong> {{address}}</p>
+        <p class="contact"><strong>Contact:</strong> {{contact}}</p>
+        <hr>
+        <div class="education">
+            <h2>Education</h2>
+            <hr>
+            <h4>{{college}} <span class="date">(2024-Present)</span></h4>
+            <h4>Course: {{course}}</h4> 
+            <br>
+            <h4>{{highschool}} <span class="date">(2022-2024)</span></h4>
+            <h4>Strand: {{strand}} </h4>
+        </div>
+        <hr>
+        <div class="awards">
+            <h2>Educational Awards</h2>
+            <ul>
+                <li *ngFor="let award of educationalAwards">{{award}}</li>
+            </ul>
+            <h2>Educational Experiences</h2>
+            <ul>
+                <li *ngFor="let exp of educationalExperiences">{{exp}}</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="internships">
+            <h2>Internship and Work Experiences</h2>
+            <div *ngFor="let intern of internships" class="internship-block">
+                <h4>{{intern.company}}</h4>
+                <p><strong>Role:</strong> {{intern.role}}</p>
+                <p><strong>Period:</strong> {{intern.period}}</p>
+                <p>{{intern.description}}</p>
+            </div>
+        </div>
+        <hr>
+        <div class="courses">
+            <h2>Currently Enrolled Courses</h2>
+            <ul>
+                <li *ngFor="let course of currentCourses">
+                    {{course.name}} <span class="teacher">- {{course.teacher}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

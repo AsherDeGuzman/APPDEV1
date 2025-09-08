@@ -1,0 +1,15 @@
+.overview {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.overview h2 {
+  color: #2c3e50;
+}
+.overview ul {
+  margin-top: 1rem;
+}
+.overview li {
+  margin-bottom: 0.5rem;
+}
