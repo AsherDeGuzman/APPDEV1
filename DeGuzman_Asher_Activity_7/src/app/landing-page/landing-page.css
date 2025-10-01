@@ -1,0 +1,43 @@
+/* Pokémon themed styles for landing page */
+.landing-container {
+  background: linear-gradient(135deg, #ffcb05 60%, #3b4cca 100%);
+  text-align: center;
+  padding: 30px 40px;
+  border: 6px solid #e3350d;
+  border-radius: 24px;
+  box-shadow: 0 0 30px #3b4cca55;
+  font-family: 'Press Start 2P', cursive;
+}
+
+h1, h2, h3 {
+  color: #e3350d;
+  text-shadow: 2px 2px #ffcb05;
+}
+
+p {
+  color: #2a75bb;
+  font-size: 1.2em;
+}
+
+body {
+  background-image: url('https://i.pinimg.com/originals/ab/5f/cc/ab5fcc9dbec4abd43e5023663f2502ad.gif');
+  background-size: cover;
+  font-family: 'Press Start 2P', cursive;
+}
+
+img {
+  width: 60%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  text-align: center;
+}
+
+.content {
+  width: 80%;
+}

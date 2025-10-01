@@ -1,0 +1,27 @@
+<style>
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
+<div class="container">
+  <h3>GYM 7</h3>
+  <h2 class="GymName">{{gymName}}</h2>
+</div>
+<div class="content">
+  <img src="https://archives.bulbagarden.net/media/upload/thumb/0/02/HeartGold_SoulSilver_Pryce.png/180px-HeartGold_SoulSilver_Pryce.png">
+  <hr>
+  <p class="Leader">Gym Leader: {{gymLeader}}</p>
+  <p class="Badge">Badge: {{badge}}</p>
+  <p class="specialty">Specialty: {{specialty}}</p>
+  <br>
+  <p>Pokemon(s) Used:</p>
+  <ul>
+    @for(pokemon of pokemons; track pokemon){
+      <li>{{pokemon}}</li>
+    }
+    
+  </ul>
+</div>
