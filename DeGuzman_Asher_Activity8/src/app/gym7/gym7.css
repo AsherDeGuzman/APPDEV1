@@ -1,0 +1,99 @@
+/* Pokémon themed styles for Gym 7 */
+.container {
+  background: linear-gradient(135deg, #ee99ac 60%, #f4b5c3 100%);
+  text-align: center;
+  padding: 10px 20px;
+  border: 4px solid #e3350d;
+  border-radius: 16px;
+  box-shadow: 0 0 20px #e3350d55;
+  font-family: 'Press Start 2P', cursive;
+}
+
+p {
+  color: #e3350d;
+  font-size: 1.1em;
+}
+
+.content {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #ee99ac;
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 0 10px #e3350d55;
+}
+
+body {
+  background-image: url('https://i.pinimg.com/originals/ab/5f/cc/ab5fcc9dbec4abd43e5023663f2502ad.gif');
+  background-size: cover;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.gym-card {
+  background: linear-gradient(135deg, #f8f9fa 60%, #ffe066 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(255, 215, 0, 0.15);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 420px;
+  text-align: center;
+  font-family: 'Pokemon Solid', 'Arial', sans-serif;
+  border: 3px solid #ffcb05;
+}
+
+.gym-image {
+  width: 100%;
+  max-width: 260px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 2px solid #3b4cca;
+  background: #fffbe6;
+}
+
+.pokemon-list {
+  background: #fffbe6;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(255, 203, 5, 0.10);
+  border: 2px dashed #3b4cca;
+}
+
+.pokemon-list h3 {
+  color: #3b4cca;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Pokemon Solid', 'Arial', sans-serif;
+}
+
+.pokemon-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pokemon-list li {
+  font-size: 1.1rem;
+  color: #2a75bb;
+  margin-bottom: 0.4rem;
+  font-family: 'Pokemon Solid', 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-list .level {
+  background: #ffcb05;
+  color: #3b4cca;
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
+  margin-left: 0.5rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+  box-shadow: 0 1px 4px rgba(255, 203, 5, 0.15);
+}
