@@ -1,6 +1,10 @@
 <div class="content">
+  <div class="gym-header-card">
+    <span class="gym-number">Gym {{ gym.number }}</span>
+    <h2 class="gym-title">{{ gym.name }}</h2>
+    <p class="gym-desc">{{ gym.description }}</p>
+  </div>
   <div class="gym-card">
-    <h2>{{ gym.name }}</h2>
     <img [src]="gym.image" alt="{{ gym.name }}" class="gym-image" />
     <p><strong>Leader:</strong> {{ gym.leader }}</p>
     <p><strong>Type:</strong> {{ gym.type }}</p>
@@ -14,5 +18,4 @@
       </ul>
     </div>
   </div>
-
 </div>
