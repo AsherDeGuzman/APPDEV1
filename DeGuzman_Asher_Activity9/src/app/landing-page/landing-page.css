@@ -1,0 +1,156 @@
+/* Pokémon themed styles for landing page */
+.landing-container {
+  background: linear-gradient(135deg, #ffcb05 60%, #575d8c 100%);
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(59,76,202,0.15);
+  padding: 3rem 2rem;
+  margin: 3rem auto;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  border: 4px solid #3b4cca;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.landing-container h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: #3b4cca;
+  font-family: 'Pokemon Solid', 'Arial', sans-serif;
+  text-shadow: 2px 2px 0 #ffcb05, 0 2px 8px #fffbe6;
+}
+
+.landing-container p {
+  font-size: 1.25rem;
+  color: #2a75bb;
+  margin-bottom: 0;
+  font-family: 'Pokemon Solid', 'Arial', sans-serif;
+}
+
+.landing-container::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 20px;
+  pointer-events: none;
+  background-image:
+    url('https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png');
+  opacity: 0.08;
+  z-index: 0;
+}
+
+h1, h2, h3 {
+  color: #e3350d;
+  text-shadow: 2px 2px #ffcb05;
+}
+
+p {
+  color: #2a75bb;
+  font-size: 1.2em;
+}
+
+body {
+  background-image: url('https://i.pinimg.com/originals/ab/5f/cc/ab5fcc9dbec4abd43e5023663f2502ad.gif');
+  background-size: cover;
+  font-family: 'Pokemon Solid', 'Arial', sans-serif;
+}
+
+img {
+  width: 60%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  text-align: center;
+}
+
+.content {
+  width: 80%;
+}
+
+.lore-box {
+  background: #fffbe6;
+  border: 2.5px dashed #3b4cca;
+  border-radius: 14px;
+  padding: 1.2rem 1.5rem;
+  margin: 1.2rem auto 0 auto;
+  max-width: 480px;
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+  box-shadow: 0 2px 8px rgba(255, 203, 5, 0.10);
+}
+.lore-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+.lore-box p {
+  font-size: 1.15rem;
+  color: #2a75bb;
+  margin: 0;
+  font-family: 'Pokemon Solid', 'Arial', sans-serif;
+  text-align: left;
+}
+
+.lore-card {
+  background: linear-gradient(135deg, #fffbe6 60%, #e0c3fc 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(59,76,202,0.10);
+  border: 3px solid #3b4cca;
+  max-width: 650px;
+  margin: 2rem auto 0 auto;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+.lore-title {
+  color: #ffcb05;
+  font-size: 2rem;
+  font-family: 'Pokemon Solid', 'Arial', sans-serif;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 0 #3b4cca, 0 2px 8px #fffbe6;
+}
+.lore-intro {
+  font-size: 1.15rem;
+  color: #2a75bb;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.lore-section {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.lore-heading {
+  color: #ff9800;
+  font-size: 1.2rem;
+  font-family: 'Pokemon Solid', 'Arial', sans-serif;
+  margin-bottom: 0.3rem;
+  text-shadow: 1px 1px 0 #fffbe6;
+}
+.lore-section ul {
+  margin: 0.2rem 0 0.5rem 0;
+  padding-left: 1.2rem;
+}
+.lore-section li {
+  font-size: 1rem;
+  color: #2a75bb;
+  margin-bottom: 0.2rem;
+  font-family: 'Pokemon Solid', 'Arial', sans-serif;
+}
+.lore-section p {
+  font-size: 1rem;
+  color: #2a75bb;
+  margin: 0.2rem 0 0.5rem 0;
+}
