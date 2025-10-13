@@ -1,49 +1,54 @@
-<h1>Johto Pokemon Trainer Registration Form: </h1>
-<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
-  <label for="name">Trainer Name:</label>
-  <input required type="text" id="name" formControlName="name" />
-  <br />
+<div class="container">
+  <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <h1>Johto Pokemon Trainer Registration Form: </h1>
+    <label for="name">Trainer Name:</label>
+    <input required type="text" id="name" formControlName="name" />
+    <br />
 
-  <label for="age">Age:</label>
-  <input required type="text" id="age" formControlName="age" />
-  <br />
+    <label for="age">Age:</label>
+    <input required type="text" id="age" formControlName="age" />
+    <br />
 
-  <label for="address">Address:</label>
-  <input required type="text" id="address" formControlName="address" />
-  <br />
+    <label for="address">Address:</label>
+    <input required type="text" id="address" formControlName="address" />
+    <br />
 
-  <label>Pokémon Team:</label>
-  <div class="pokemon-team-inputs">
-    <input required type="text" placeholder="Pokémon 1" formControlName="pokemon1" />
-    <input type="text" placeholder="Pokémon 2" formControlName="pokemon2" />
-    <input type="text" placeholder="Pokémon 3" formControlName="pokemon3" />
-    <input type="text" placeholder="Pokémon 4" formControlName="pokemon4" />
-    <input type="text" placeholder="Pokémon 5" formControlName="pokemon5" />
-    <input type="text" placeholder="Pokémon 6" formControlName="pokemon6" />
+    <label>Pokémon Team:</label>
+    <div class="pokemon-team-inputs">
+      <input required type="text" placeholder="Pokémon 1" formControlName="pokemon1" />
+      <input type="text" placeholder="Pokémon 2" formControlName="pokemon2" />
+      <input type="text" placeholder="Pokémon 3" formControlName="pokemon3" />
+      <input type="text" placeholder="Pokémon 4" formControlName="pokemon4" />
+      <input type="text" placeholder="Pokémon 5" formControlName="pokemon5" />
+      <input type="text" placeholder="Pokémon 6" formControlName="pokemon6" />
+    </div>
+    <br />
+
+    <button type="submit" [disabled]="formGroup.invalid || !formGroup.get('pokemon1')?.value">Submit</button>
+  </form>
+
+  <br />
+  <div class="trainer-list">
+    <div class="null" *ngIf="!trainerList || trainerList.length == 0">
+      No Registration Yet
+    </div>
+      <h1>Pokemon Trainer List: </h1>
+      @for (trainer of trainerList; track $index;) {
+      <hr>
+      <div>
+      <div class="label"> Trainer Name:</div> <div class="value">{{ trainer.name }}</div>
+      <br>
+      <div class="label">Age:</div> <div class="value">{{ trainer.age }}</div>
+      <br>
+      <div class="label">Address:</div> <div class="value">{{ trainer.address }}</div>
+      <br>
+      <div class="label">Pokémon Team:</div>
+      <div class="value">
+          {{ trainer.pokemon1 }}, {{ trainer.pokemon2 }}, {{ trainer.pokemon3 }},
+          {{ trainer.pokemon4 }}, {{ trainer.pokemon5 }}, {{ trainer.pokemon6 }}
+      </div>
+      </div>
+      <br>
+      }
   </div>
-  <br />
-
-  <button type="submit" [disabled]="formGroup.invalid || !formGroup.get('pokemon1')?.value">Submit</button>
-</form>
-
-<br />
-<h1>Pokemon Trainer List: </h1>
-<div class="trainer-list">
-    @for (trainer of trainerList; track $index;) {
-    <hr>
-    <div>
-    <div class="label">Name:</div> <div class="value">{{ trainer.name }}</div>
-    <br>
-    <div class="label">Age:</div> <div class="value">{{ trainer.age }}</div>
-    <br>
-    <div class="label">Address:</div> <div class="value">{{ trainer.address }}</div>
-    <br>
-    <div class="label">Pokémon Team:</div>
-    <div class="value">
-        {{ trainer.pokemon1 }}, {{ trainer.pokemon2 }}, {{ trainer.pokemon3 }},
-        {{ trainer.pokemon4 }}, {{ trainer.pokemon5 }}, {{ trainer.pokemon6 }}
-    </div>
-    </div>
-    <br>
-    }
 </div>

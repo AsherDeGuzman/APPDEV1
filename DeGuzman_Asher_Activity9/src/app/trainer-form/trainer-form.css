@@ -1,15 +1,42 @@
-/* Consistent padding, font, and spacing with sidebar and other components */
 body {
   background-image: url('https://i.pinimg.com/originals/ab/5f/cc/ab5fcc9dbec4abd43e5023663f2502ad.gif');
   background-size: cover;
   font-family: 'Press Start 2P', cursive;
-  /* Add grid background effect */
   background-color: #f6f8fc;
   min-height: 100vh;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+form {
+  background: linear-gradient(135deg, #ffe259 0%, #ffa751 100%);
+  border-radius: 18px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 0 0 4px #3b4cca, 0 0 100px #03030355;
+  margin-bottom: 0;
+  max-width: 520px;
+  margin-top: 90px;
+  margin-left: 100px;
+  border: 3px solid #3b4cca;
+}
+
+.trainer-list {
+  background: linear-gradient(135deg, #ffe259 0%, #ffa751 100%);
+  border-radius: 18px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 0 0 4px #3b4cca, 0 0 100px #03030355;
+  margin-bottom: 0;
+  max-width: 520px;
+  margin-top: 90px;
+  margin-left: 50px;
+  border: 3px solid #3b4cca;
+}
+
 h1 {
-  margin-top: 40px;
+  margin-top: 10px;
   color: #3b4cca;
   display: flex;
   text-align: center;
@@ -28,18 +55,6 @@ h2 {
   text-shadow: 1px 1px 0 #fff, 2px 2px 0 #3b4cca22;
   text-align: left;
   letter-spacing: 0.5px;
-}
-
-form {
-  background: linear-gradient(135deg, #ffe259 0%, #ffa751 100%);
-  border-radius: 18px;
-  padding: 2rem 2.5rem;
-  box-shadow: 0 0 0 4px #3b4cca, 0 0 100px #03030355;
-  margin-bottom: 2rem;
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 3px solid #3b4cca;
 }
 
 label {
@@ -170,6 +185,22 @@ div[ngfor] {
   margin-top: 0;
 }
 
+.trainer-form-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .trainer-form-list-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
 /* Responsive adjustments */
 @media (max-width: 700px) {
   form {
@@ -198,14 +229,3 @@ div[ngfor] {
   }
 }
 
-.trainer-list {
-  background: linear-gradient(135deg, #ffe259 0%, #ffa751 100%);
-  border-radius: 18px;
-  padding: 2rem 2.5rem;
-  box-shadow: 0 0 0 4px #3b4cca, 0 0 100px #03030355;
-  margin-bottom: 2rem;
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 3px solid #3b4cca
-}
