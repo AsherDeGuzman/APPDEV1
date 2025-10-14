@@ -1,0 +1,23 @@
+<div class="content">
+  <div class="gym-header-card">
+    <span class="gym-number">Gym {{ gym.number }}</span>
+    <h2 class="gym-title">{{ gym.name }}</h2>
+    <p class="gym-desc">{{ gym.description }}</p>
+  </div>
+  <div class="gym-card">
+    <img [src]="gym.image" alt="{{ gym.name }}" class="gym-image" />
+    <p><strong>Leader:</strong> {{ gym.leader }}</p>
+    <p><strong>Type:</strong> {{ gym.type }}</p>
+    <p><strong>Badge:</strong> {{ gym.badge }}</p>
+    <div class="pokemon-list">
+      <h3>Pokémon Team</h3>
+      <ul>
+        <li *ngFor="let poke of gym.pokemons">
+          {{ poke.name }} <span class="level">Lv. {{ poke.level }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br>
+
+</div>

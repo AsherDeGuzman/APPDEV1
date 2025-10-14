@@ -1,0 +1,21 @@
+  <div class="sidebar-toggle" (click)="toggleSidebar()">
+    <span class="hamburger"></span>
+  </div>
+<nav class="sidebar" [class.hidden]="sidebarHidden">
+
+  <h2 class="sidebar-title">Johto Gyms</h2>
+  <ul class="sidebar-list">
+    <li><a routerLink="/" routerLinkActive="active" class="home-link">Home</a></li>
+    <li><a routerLink="/gym1" routerLinkActive="active">Violet Gym</a></li>
+    <li><a routerLink="/gym2" routerLinkActive="active">Azalea Gym</a></li>
+    <li><a routerLink="/gym3" routerLinkActive="active">Goldenrod Gym</a></li>
+    <li><a routerLink="/gym4" routerLinkActive="active">Ecruteak Gym</a></li>
+    <li><a routerLink="/gym5" routerLinkActive="active">Cianwood Gym</a></li>
+    <li><a routerLink="/gym6" routerLinkActive="active">Olivine Gym</a></li>
+    <li><a routerLink="/gym7" routerLinkActive="active">Mahogany Gym</a></li>
+    <li><a routerLink="/gym8" routerLinkActive="active">Blackthorn Gym</a></li>
+    <li><a routerLink="/trainer-form" routerLinkActive="active">Trainer Form</a></li>
+    <li><a routerLink="/pokeballs" routerLinkActive="active">Pokeballs</a></li>
+    <li><a routerLink="/berries" routerLinkActive="active">Berries</a></li>
+  </ul>
+</nav>
