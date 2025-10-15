@@ -9,7 +9,7 @@ import { MatTableModule } from '@angular/material/table';
   styleUrl: './berries.css'
 })
 export class Berries {
-  dataSource: {name: string; effect: string}[] = [];
+  dataSource: {image: string, name: string; effect: string}[] = [];
   //Inject the service in to the component for fruits
   constructor(private b: BerriesService){
   }
@@ -19,5 +19,5 @@ export class Berries {
     console.log('ngOnInit called');
     this.dataSource = this.b.getBerries();
   }
-  displayedColumns: string[] = ['name', 'effect']
+  displayedColumns: string[] = ['image', 'name', 'effect']
 }

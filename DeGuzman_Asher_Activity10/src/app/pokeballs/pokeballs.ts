@@ -9,7 +9,7 @@ import { MatTableModule } from '@angular/material/table';
   styleUrl: './pokeballs.css'
 })
 export class Pokeballs {
-  dataSource: {name: string; gen: string}[] = [];
+  dataSource: {image: string, name: string; gen: string}[] = [];
   //Inject the service in to the component for fruits
   constructor(private p: PokeballsService){
   }
@@ -19,5 +19,5 @@ export class Pokeballs {
     console.log('ngOnInit called');
     this.dataSource = this.p.getPokeballs();
   }
-  displayedColumns: string[] = ['name', 'color']
+  displayedColumns: string[] = ['image', 'name', 'generation']
 }
